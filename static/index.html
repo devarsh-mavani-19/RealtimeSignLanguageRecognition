@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zoom Clone</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+      body {
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+      }
+
+      .Name-Page {
+        width: 400px;
+        padding: 10% 0 0 0;
+        margin: auto;
+      }
+
+      .form {
+        position: relative;
+        z-index: 1;
+        background-color: white;
+        max-width: 200px;
+        margin: 0 auto 100px;
+        padding: 25px;
+        text-align: center;
+      }
+
+      .form input {
+        font-family: "Roboto", "sans-serif";
+        outline: 1;
+        background: rgb(226, 218, 218);
+        width: 100%;
+        border: 0;
+        margin: 0 0 15px;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+
+      .form button {
+        font-family: "Roboto", "sans-serif";
+        outline: 0;
+        background: #4caf50;
+        width: 100%;
+        border: 0;
+        padding: 10px;
+        color: #ffffff;
+        font-size: 10px;
+        cursor: pointer;
+      }
+
+      .form p {
+        font-family: "Roboto", "sans-serif";
+        font-size: 60%;
+        margin: 15px;
+      }
+
+      .form button:hover {
+        background: #43a047;
+      }
+
+      .form .unknown-form {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="Name-Page">
+      <div class="form">
+        <form class="known-form" action="/join">
+          <input type="text" placeholder="Enter your name" name="name" />
+          <button>Host a Meeting</button>
+          <p><a href="javascript:show()">Join Meeting?</a></p>
+        </form>
+
+        <form class="unknown-form" action="/joinold">
+          <input type="text" placeholder="Enter your name" name="name" />
+          <input type="text" placeholder="Enter Meeting Id" name="meeting_id" />
+          <button>Join Meeting</button>
+          <p>
+            <a href="javascript:show()">Host Meeting?</a>
+          </p>
+        </form>
+      </div>
+    </div>
+    <script>
+      function show() {
+        $("form").animate({ height: "toggle", opacity: "toggle" }, "slow");
+      }
+    </script>
+  </body>
+</html>
