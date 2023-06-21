@@ -10,11 +10,16 @@
 4. `PeerJS`
 
 `Frontend`
-1. EJS
-2. HTML/CSS/JS
+1. `EJS`
+2. `HTML/CSS/JS`
 
 `Machine Learning`
 1. `Mediapipe`
 2. `TensorflowJS`
 
-
+# Installation
+1. fork the repo
+2. `git clone <repo-name>`
+3. `cd RealtimeSignLanguageRecognition`
+4. `npm install`
+5. `npm start`
