@@ -5,7 +5,7 @@ Frontend:
 Javascript
 HTML/CSS
 
-![Alt text](image.png)
+![Alt text](https://github.com/devarsh-mavani-19/RealtimeSignLanguageRecognition/blob/master/image.png?raw=true)
 
 Backend:
 NodeJS
