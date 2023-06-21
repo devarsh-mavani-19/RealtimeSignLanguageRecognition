@@ -5,6 +5,7 @@ Frontend:
 Javascript
 HTML/CSS
 
+![Alt text](image.png)
 
 Backend:
 NodeJS
