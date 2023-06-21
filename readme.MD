@@ -9,7 +9,11 @@
 3. `Socket.io (Websockets)`
 4. `PeerJS`
 
-`Machine Learning
+`Frontend`
+1. EJS
+2. HTML/CSS/JS
+
+`Machine Learning`
 1. `Mediapipe`
 2. `TensorflowJS`
 
